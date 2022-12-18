@@ -9,7 +9,7 @@ SECOND_PUZZLE_TEST_ANSWER = 19
 SECOND_PUZZLE_REAL_ANSWER = 3380
 
 
-class Year2022Day18Test(TestCase):
+class Year2022Day06Test(TestCase):
     def test_first_puzzle_test(self):
         data = read_data(Path(__file__).parent / 'test.data')
         self.assertEqual(FIRST_PUZZLE_TEST_ANSWER, first_puzzle(data))
