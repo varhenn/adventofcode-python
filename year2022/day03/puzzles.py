@@ -1,6 +1,6 @@
 """Puzzles from https://adventofcode.com/2022/day/3"""
 from pathlib import Path
-from typing import List, Iterable
+from typing import List
 
 
 def read_data(filepath: Path) -> List[str]:
