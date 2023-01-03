@@ -6,7 +6,7 @@ from year2022.day02.puzzles import read_data, first_puzzle, second_puzzle
 FIRST_PUZZLE_TEST_ANSWER = 15
 FIRST_PUZZLE_REAL_ANSWER = 9177
 SECOND_PUZZLE_TEST_ANSWER = 12
-SECOND_PUZZLE_REAL_ANSWER = 0
+SECOND_PUZZLE_REAL_ANSWER = 12111
 
 
 class Year2022Day02Test(TestCase):
