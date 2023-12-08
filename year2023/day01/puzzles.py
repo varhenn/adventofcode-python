@@ -9,17 +9,16 @@ def read_data(filepath: Path) -> List[str]:
     return open(filepath).read().splitlines()
 
 
-def value(line: str) -> int:
-    digits = list(map(int, findall(r"\d", line)))
-    return int(f"{digits[0]}{digits[-1]}")
-
-
 def first_puzzle(lines: Iterable[str]) -> int:
+    def value(line: str) -> int:
+        digits = list(map(int, findall(r"\d", line)))
+        return int(f"{digits[0]}{digits[-1]}")
+
     return sum(map(value, lines))
 
 
 def second_puzzle(lines: Iterable[str]) -> int:
-    def names_to_digit(line: str) -> str:
+    def names_to_digits(line: str) -> str:
         return (
             line.replace("one", "one1one")
             .replace("two", "two2two")
@@ -32,7 +31,7 @@ def second_puzzle(lines: Iterable[str]) -> int:
             .replace("nine", "nine9nine")
         )
 
-    return first_puzzle(map(names_to_digit, lines))
+    return first_puzzle(map(names_to_digits, lines))
 
 
 if __name__ == "__main__":
