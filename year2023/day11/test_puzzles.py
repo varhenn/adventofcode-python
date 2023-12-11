@@ -4,9 +4,9 @@ from unittest import TestCase, main
 from year2023.day11.puzzles import read_data, first_puzzle, second_puzzle
 
 FIRST_PUZZLE_TEST_ANSWER = 374
-FIRST_PUZZLE_REAL_ANSWER = 0
+FIRST_PUZZLE_REAL_ANSWER = 10276166
 SECOND_PUZZLE_TEST_ANSWER = 82000210
-SECOND_PUZZLE_REAL_ANSWER = 0
+SECOND_PUZZLE_REAL_ANSWER = 598693078798
 
 
 class Year2023Day11Test(TestCase):
