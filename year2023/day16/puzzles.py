@@ -39,7 +39,7 @@ def second_puzzle(grid: dict[complex, str]) -> int:
         first_puzzle(grid, p, d)
         for p in grid
         for d in [1, -1, 1j, -1j]
-        if p - d not in grid
+        if p - d not in grid or grid[p] != '.'
     )
 
 
